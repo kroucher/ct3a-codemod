@@ -1,0 +1,37 @@
+{
+  "name": "ct3a-codemod",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "ct3a-codemod": "./dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc --outDir dist",
+    "format": "prettier --write \"./**/*.ts\" \"./**/*.js\"",
+    "lint": "tslint \"src/**/*.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kroucher",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/glob": "^7.2.0",
+    "@types/node": "^18.7.13",
+    "commander": "^9.4.0",
+    "glob": "^8.0.3",
+    "next-auth": "^4.0.0-beta.11",
+    "prettier": "^2.7.1",
+    "prisma": "^2.29.1",
+    "tailwindcss": "^3.1.8",
+    "ts-morph": "^15.1.0",
+    "typescript": "^4.8.2"
+  },
+  "dependencies": {
+    "@trpc/client": "^9.25.3",
+    "@trpc/next": "^9.25.3",
+    "@trpc/react": "^9.25.3",
+    "@trpc/server": "^9.25.3",
+    "inquirer": "^9.1.0"
+  }
+}
